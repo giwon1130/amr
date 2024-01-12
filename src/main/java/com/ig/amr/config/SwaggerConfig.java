@@ -9,6 +9,7 @@ import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.security.SecurityScheme;
 
+// http://localhost:8080/swagger-ui/index.html
 @Configuration
 public class SwaggerConfig {
 
