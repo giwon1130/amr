@@ -1,0 +1,42 @@
+server:
+  port: 8080  # port
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://3.39.226.230:5432/amr
+    username: postgres
+    password: 1234
+    driver-class-name: org.postgresql.Driver  # JDBC
+  mvc:
+    path match:
+      matching-strategy: ant_path_matcher
+  security:
+    user:
+      name: user
+      password: 2758
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  data:
+    redis:
+      host: 3.39.226.230
+      port: 6379
+
+
+
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace
+
+# swagger
+swagger:
+  title: amr doc
+  description: amr API
+  version: 1.0
