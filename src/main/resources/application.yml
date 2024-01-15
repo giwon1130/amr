@@ -1,7 +1,6 @@
 server:
   port: 8080  # port
 
-
 spring:
   datasource:
     url: jdbc:postgresql://3.39.226.230:5432/amr
@@ -26,6 +25,10 @@ spring:
     redis:
       host: 3.39.226.230
       port: 6379
+
+# log4j2.yml 파일 경로 지정
+logging:
+  config: classpath:log4j2.yml
 
 # swagger
 swagger:
